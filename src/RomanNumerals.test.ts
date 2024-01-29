@@ -62,6 +62,9 @@ describe.each([{
 }, {
   input: 20,
   result: 'XX'
+}, {
+  input: 30,
+  result: 'XXX'
 }])('Roman Numerals', ({input, result}) => {
   it(`should return ${result} when given ${input}`, () => {
     // Arrange

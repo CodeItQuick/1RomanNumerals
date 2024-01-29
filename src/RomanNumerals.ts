@@ -3,11 +3,17 @@ export class RomanNumerals {
         let result = '';
 
         let tensPlace = Math.floor(num / 10);
-   
+
+
+        if (tensPlace >= 3) {
+            num -= 10
+            result += 'X'
+        } 
         if (tensPlace >= 2) {
-            num -= 20
-            result += 'XX'
-        } else if (tensPlace >= 1) {
+            num -= 10
+            result += 'X'
+        } 
+        if (tensPlace >= 1) {
             num -= 10
             result += 'X'
         }
