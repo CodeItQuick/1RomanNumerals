@@ -3,7 +3,7 @@
 2. Follow Red->Green->Refactor
 3. Introduce the minimum amount of code to make the test pass
 3. Implement strong-style pairing with navigator/driver
-4. Introduce ZOMBIES
+4. Introduce ZOMBIES (maybe not needed for this as the test cases are very straight-forward)
 5. Smaller steps
 6. Proper Abstracting/Remove Duplication
 7. 15 minute retrospective at end of session 
