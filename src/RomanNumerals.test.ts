@@ -44,10 +44,22 @@ describe.each([{
 }, {
   input: 14,
   result: 'XIV'
-}
-
-
-])('Roman Numerals', ({input, result}) => {
+}, {
+  input: 15,
+  result: 'XV'
+}, {
+  input: 16,
+  result: 'XVI'
+}, {
+  input: 17,
+  result: 'XVII'
+}, {
+  input: 18,
+  result: 'XVIII'
+}, {
+  input: 19,
+  result: 'XIX'
+}])('Roman Numerals', ({input, result}) => {
   it(`should return ${result} when given ${input}`, () => {
     // Arrange
     const romanNumerals = new RomanNumerals()
