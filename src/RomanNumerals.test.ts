@@ -41,6 +41,9 @@ describe.each([{
 }, {
   input: 13,
   result: 'XIII'
+}, {
+  input: 14,
+  result: 'XIV'
 }
 
 

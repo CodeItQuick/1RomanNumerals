@@ -2,19 +2,24 @@ export class RomanNumerals {
   public convert(num) {
     let result = '';
 
-    if (num === 4) {
-      return 'IV'
-    }
-    if (num === 9) {
-      return 'IX'
-    }
-
     if (num >= 10) {
       num -= 10
       result += 'X'
-    } else if (num >= 5) {
+    }
+
+    if (num === 9) {
+      num -= 9
+      result += 'IX'
+    }
+
+    if (num >= 5) {
       num -= 5
       result += 'V'
+    }
+
+    if (num === 4) {
+      num -= 4
+      result += 'IV'
     }
 
     for (let i = 0; i < num; i++) {
