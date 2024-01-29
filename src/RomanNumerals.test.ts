@@ -14,6 +14,12 @@ describe.each([{
 }, {
   input: 4,
   result: 'IV'
+}, {
+  input: 5,
+  result: 'V'
+}, {
+  input: 6,
+  result: 'VI'
 }
 ])('Roman Numerals', ({input, result}) => {
   it(`should return ${result} when given ${input}`, () => {
