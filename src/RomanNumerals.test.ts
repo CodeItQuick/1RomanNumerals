@@ -26,6 +26,9 @@ describe.each([{
 }, {
   input: 8,
   result: 'VIII'
+}, {
+  input: 9,
+  result: 'IX'
 },
 
 ])('Roman Numerals', ({input, result}) => {

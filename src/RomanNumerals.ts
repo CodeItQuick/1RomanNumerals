@@ -1,6 +1,10 @@
 export class RomanNumerals {
   public convert(num) {
     let result = '';
+    if (num === 9) {
+      return 'IX'
+    }
+
     if (num === 4) {
       return 'IV'
     }
@@ -15,4 +19,3 @@ export class RomanNumerals {
     return result;
   }
 }
- 
