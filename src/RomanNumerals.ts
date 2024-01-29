@@ -2,6 +2,11 @@ export class RomanNumerals {
   public convert(num) {
     let result = '';
 
+    if (num >= 20) {
+      num -= 10
+      result += 'X'
+    }
+    
     if (num >= 10) {
       num -= 10
       result += 'X'
