@@ -4,16 +4,7 @@ export class RomanNumerals {
 
         let tensPlace = Math.floor(num / 10);
 
-
-        if (tensPlace >= 3) {
-            num -= 10
-            result += 'X'
-        } 
-        if (tensPlace >= 2) {
-            num -= 10
-            result += 'X'
-        } 
-        if (tensPlace >= 1) {
+        for (let i = 0; i < tensPlace; i++) {
             num -= 10
             result += 'X'
         }
