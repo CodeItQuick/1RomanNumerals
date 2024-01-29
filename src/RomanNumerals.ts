@@ -2,16 +2,17 @@ export class RomanNumerals {
   public convert(num) {
     let result = '';
 
-    if (num >= 20) {
-      num -= 10
-      result += 'X'
+    let tensPlace = Math.floor(num / 10);
+    if (tensPlace >= 1) {
+       if (tensPlace >= 2) {
+         num -= 20
+         result += 'XX'
+       } else if (tensPlace >= 1) {
+         num -= 10
+         result += 'X'
+       }
     }
     
-    if (num >= 10) {
-      num -= 10
-      result += 'X'
-    }
-
     if (num === 9) {
       num -= 9
       result += 'IX'
