@@ -11,8 +11,12 @@ describe.each([{
 }, {
   input: 3,
   result: 'III'
-}])('Roman Numerals', ({input, result}) => {
-  it('should return I when given 1', () => {
+}, {
+  input: 4,
+  result: 'IV'
+}
+])('Roman Numerals', ({input, result}) => {
+  it(`should return ${result} when given ${input}`, () => {
     // Arrange
     const romanNumerals = new RomanNumerals()
  
@@ -21,16 +25,5 @@ describe.each([{
  
     // Assert
     expect(answer).toBe(result);
-  })
- 
-  it('should return II when given 2', () => {
-    // Arrange
-    const romanNumerals = new RomanNumerals()
- 
-    // Act
-    const answer = romanNumerals.convert(2)
- 
-    // Assert
-    expect(answer).toBe('II')
   })
 })
