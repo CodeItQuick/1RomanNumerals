@@ -1,6 +1,11 @@
 export class RomanNumerals {
     public convert(num) {
-        let result = '';
+        let result = ''
+
+        if (num >= 90) {
+            num -= 90
+            result += 'XC'
+        }
 
         if (num >= 50) {
             num -= 50
@@ -12,7 +17,7 @@ export class RomanNumerals {
             result += 'XL'
         }
         
-        let tensPlace = Math.floor(num / 10);
+        let tensPlace = Math.floor(num / 10)
         
         for (let i = 0; i < tensPlace; i++) {
             num -= 10
