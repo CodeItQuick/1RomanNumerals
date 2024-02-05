@@ -2,7 +2,12 @@ export class RomanNumerals {
     public convert(num) {
         let result = '';
 
-        if (num === 40) {
+        if (num === 50) {
+            num -= 50
+            result += 'L'
+        }
+        
+        if (num >= 40) {
             num -= 40
             result += 'XL'
         }

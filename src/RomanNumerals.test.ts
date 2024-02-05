@@ -95,6 +95,36 @@ describe.each([{
 }, {
   input: 40,
   result: 'XL'
+}, {
+  input: 41,
+  result: 'XLI'
+}, {
+  input: 42,
+  result: 'XLII'
+}, {
+  input: 43,
+  result: 'XLIII'
+}, {
+  input: 44,
+  result: 'XLIV'
+}, {
+  input: 45,
+  result: 'XLV'
+}, {
+  input: 46,
+  result: 'XLVI'
+}, {
+  input: 47,
+  result: 'XLVII'
+}, {
+  input: 48,
+  result: 'XLVIII'
+}, {
+  input: 49,
+  result: 'XLIX'
+}, {
+  input: 50,
+  result: 'L'
 }])('Roman Numerals', ({input, result}) => {
   it(`should return ${result} when given ${input}`, () => {
     // Arrange
