@@ -8,6 +8,10 @@ export class RomanNumerals {
                 value: 1000
             },
             {
+                numeral: 'CM',
+                value: 900
+            },
+            {
                 numeral: 'D',
                 value: 500
             },
