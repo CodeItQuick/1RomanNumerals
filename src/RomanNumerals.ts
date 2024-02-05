@@ -2,8 +2,13 @@ export class RomanNumerals {
     public convert(num) {
         let result = '';
 
+        if (num === 40) {
+            num -= 40
+            result += 'XL'
+        }
+        
         let tensPlace = Math.floor(num / 10);
-
+        
         for (let i = 0; i < tensPlace; i++) {
             num -= 10
             result += 'X'
