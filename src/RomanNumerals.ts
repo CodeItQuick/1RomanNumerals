@@ -2,7 +2,7 @@ export class RomanNumerals {
     public convert(num) {
         let result = '';
 
-        if (num === 50) {
+        if (num >= 50) {
             num -= 50
             result += 'L'
         }
