@@ -2,6 +2,11 @@ export class RomanNumerals {
     public convert(num) {
         let result = ''
 
+        if (num >= 100) {
+            num -= 100
+            result += 'C'
+        }
+
         if (num >= 90) {
             num -= 90
             result += 'XC'
