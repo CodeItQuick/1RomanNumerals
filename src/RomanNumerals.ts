@@ -42,6 +42,10 @@ export class RomanNumerals {
             {
                 numeral: 'V',
                 value: 5
+            },
+            {
+                numeral: 'IV',
+                value: 4
             }
         ]
 
@@ -51,11 +55,6 @@ export class RomanNumerals {
                 result += numeral
             }
         })
-
-        if (num === 4) {
-            num -= 4
-            result += 'IV'
-        }
 
         for (let i = 0; i < num; i++) {
             result += 'I';
