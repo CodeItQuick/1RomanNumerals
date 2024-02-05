@@ -31,6 +31,10 @@ export class RomanNumerals {
                 numeral: 'XL',
                 value: 40
             },
+            {
+                numeral: 'X',
+                value: 10
+            }
         ]
 
         array.forEach(({numeral, value}) => {
@@ -39,13 +43,6 @@ export class RomanNumerals {
                 result += numeral
             }
         })
-
-        let tensPlace = Math.floor(num / 10)
-        
-        for (let i = 0; i < tensPlace; i++) {
-            num -= 10
-            result += 'X'
-        }
 
         if (num === 9) {
             num -= 9
