@@ -4,6 +4,10 @@ export class RomanNumerals {
 
         let array = [
             {
+                numeral: 'M',
+                value: 1000
+            },
+            {
                 numeral: 'D',
                 value: 500
             },
