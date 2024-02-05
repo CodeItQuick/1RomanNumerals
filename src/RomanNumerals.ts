@@ -2,6 +2,16 @@ export class RomanNumerals {
     public convert(num) {
         let result = ''
 
+        if (num >= 500) {
+            num -= 500
+            result += 'D'
+        }
+
+        if (num >= 400) {
+            num -= 400
+            result += 'CD'
+        }
+
         if (num >= 100) {
             num -= 100
             result += 'C'
