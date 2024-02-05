@@ -2,36 +2,39 @@ export class RomanNumerals {
     public convert(num) {
         let result = ''
 
-        if (num >= 500) {
-            num -= 500
-            result += 'D'
-        }
+        let array = [
+            {
+                numeral: 'D',
+                value: 500
+            },
+            {
+                numeral: 'CD',
+                value: 400
+            },
+            {
+                numeral: 'C',
+                value: 100
+            },
+            {
+                numeral: 'XC',
+                value: 90
+            },
+            {
+                numeral: 'L',
+                value: 50
+            },
+            {
+                numeral: 'XL',
+                value: 40
+            },
+        ]
+        array.forEach(({numeral, value}) => {
+            if (num >= value) {
+                num -= value
+                result += numeral
+            }
+        })
 
-        if (num >= 400) {
-            num -= 400
-            result += 'CD'
-        }
-
-        if (num >= 100) {
-            num -= 100
-            result += 'C'
-        }
-
-        if (num >= 90) {
-            num -= 90
-            result += 'XC'
-        }
-
-        if (num >= 50) {
-            num -= 50
-            result += 'L'
-        }
-        
-        if (num >= 40) {
-            num -= 40
-            result += 'XL'
-        }
-        
         let tensPlace = Math.floor(num / 10)
         
         for (let i = 0; i < tensPlace; i++) {
