@@ -32,8 +32,9 @@ export class RomanNumerals {
                 value: 40
             },
         ]
+
         array.forEach(({numeral, value}) => {
-            if (num >= value) {
+            while (num >= value) {
                 num -= value
                 result += numeral
             }

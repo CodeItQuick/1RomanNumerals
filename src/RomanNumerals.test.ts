@@ -155,7 +155,10 @@ describe.each([{
 }, {
   input: 653,
   result: 'DCLIII'
-},{
+}, {
+  input: 753,
+  result: 'DCCLIII'
+}, {
   input: 1000,
   result: 'M'
 }])('Roman Numerals', ({input, result}) => {
