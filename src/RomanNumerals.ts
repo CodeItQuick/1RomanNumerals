@@ -38,6 +38,10 @@ export class RomanNumerals {
             {
                 numeral: 'IX',
                 value: 9
+            },
+            {
+                numeral: 'V',
+                value: 5
             }
         ]
 
@@ -47,11 +51,6 @@ export class RomanNumerals {
                 result += numeral
             }
         })
-
-        if (num >= 5) {
-            num -= 5
-            result += 'V'
-        }
 
         if (num === 4) {
             num -= 4
